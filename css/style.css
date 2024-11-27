@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+
+}
+.logo{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+
+}
+.logo a{
+    text-decoration: none;
+    font-size: 3.5rem ;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgb(22,22,22);
+    color: rgb(48, 47, 47);
+    letter-spacing: 6px;
+}
+.tt{
+    color: rgb(0, 0, 0);
+}
+
+.SearchArea {
+    position:fixed;
+    top: 50px;
+    right: 90px;
+    height: 45px;
+    width: 170px;
+    display: flex;
+    justify-content:center;
+    background-color: white;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 2px 3px 30px rgb(46, 45, 45, 0.2);
+    z-index: 1;
+    border: 1px solid rgb(65, 62, 62, 0.1);
+
+}
+.searchbox input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+.searchbox input::placeholder{
+    color: rgb(26, 25, 25);
+    font-weight: 400;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+
+}
+.section1{
+    top: 50%;
+    left: 15%;
+    position: absolute;
+    transform: translate(-15%,-50%);
+}
+.section1 img{
+    height: 300px;
+}
+.section1Button{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+}
+.section1Button h1, h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgb(22, 22, 22);
+    color: rgb(48, 47, 47);
+    line-height: 60px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+span{
+    color:#7A72ff;
+}
+.section1Button h1{
+    letter-spacing: 28px;
+}
+.btn{
+    height: 40px;
+    width: 150px;
+    display: flex;
+    background-color: #35353f;
+    box-shadow: 2px 3px 25px rgb(29, 28, 28, 0.1);
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    outline: none;
+    cursor: pointer;
+    border: transparent !important;
+    margin-top: 20px;
+}
+.btn:hover{
+    color: #35353f;
+    background-color: #7A72ff;
+    transition: ease-in 0.5s;
+}
+.iconArea{
+    
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    border-color: white ;
+    box-shadow: 2px 3px 30px rgb(32, 32, 32,0.2);
+    border-radius: 20px;
+    padding: 10px 0px;
+    z-index: 1;
+}
+.iconArea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    color: rgb(65, 66, 68);
+    text-decoration: none;
+
+}
+.iconArea a:hover .fa-facebook-f{
+    color: #3651aa;
+
+}
+.iconArea a:hover .fa-instagram{
+    color: rgb(165, 52, 156);
+}
+.iconArea a:hover .fa-twitter{
+    color: cornflowerblue;
+}
+.iconArea a:hover .fa-youtube{
+    color: red;
+}
+.prductArea{
+    width: 85%;
+    background-color: #ffff;
+    margin: 30px auto;
+    padding: 40px 20px;
+    margin-top: -60px;
+    box-shadow: 2px 3px 30px rgb(54, 53, 53,0.4);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.prductArea > h3{
+    margin: 15px;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 3px 10px rgba(51, 49, 49, 0.5);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #35353f;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+.productBox{
+    width:250px;
+    height: 330px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.productBox img{
+    height: 180px;
+}
+.productBox p{
+    font-size: 0.9rem;
+    color: #646469;
+    letter-spacing: 0.5;
+    font-family: sans-serif;
+}
+.productBox a{
+    color: #35353f;
+    font-size: 1rem;
+    font-family: serif;
+    text-decoration: none;
+}
+.Buybtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    background: linear-gradient(120deg,#6b60ec 20%,#a166f4);
+    animation: fade 0.2s;
+    color: white;
+    display: none;
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+}
+.productBox:hover .Buybtn{
+    display:flex;
+}
+.productBox:hover{
+    box-shadow: 2px 3px 30px rgb(19, 18, 18,0.2);
+    background-color: white;
+}
+.productBox:hover a:last-child{
+    color: rgb(254, 254, 255);
+    transition: ease-in 0.3s;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    margin: 50px auto;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 150px !important;
+}
+.aboutbox{
+    width: 40%;
+    font-family: serif;
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutbox h1{
+    font-size: 3rem;
+    color: #222224;
+    font-weight: 700;
+    margin: 0px;
+}
+.aboutbox h4{
+    font-size: 2rem;
+    font-weight: 400px;
+    color: #444449;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aboutbox p{
+    color: rgb(150, 158, 158);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+.noti{
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(43, 40, 40,0.3);
+}
+.noti h3{
+    font-size: 2rem;
+    color: #222224;
+}
+.notinput{
+    width: 500px;
+    height: 50px;
+    border-radius: 6% 6% 6% 6% / 50% 50% 50% 50%;
+    display: flex;
+    background-color: rgb(175, 172, 167);
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px rgb(39, 38, 38,0.3);
+    margin-top: 30px;
+}
+.notinput input{
+    width: 100%;
+    height: 40px;
+    outline:none;
+    border: none;
+    background-color: transparent;
+}
+.notiButton{
+    width: 120px;
+    height: 40px;
+    background-color: #222224;
+    border-radius: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 3px 30px rgb(10, 10, 10,0.2);
+    font-size: 1rem;
+}
+.notiButton:hover{
+    background-color: #7A72ff;
+    color: black;
+    transition: all ease 0.4s;
+}
+footer{
+    background-color: rgb(32, 32, 32);
+    padding: 18px;
+}
+footer p{
+    text-align: center;
+    color: #f2f2f2;;
+}
